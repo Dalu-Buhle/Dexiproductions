@@ -1,0 +1,35 @@
+.abt__gallery{
+    width:50%;
+    display:grid;
+    grid-template-rows:repeat(2, 24rem);
+    grid-auto-rows:24rem;
+    grid-gap:2rem
+}
+.abt__gallery .gallery__item:nth-child(1){
+    grid-row:span 2
+}
+.abt__gallery .gallery__image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(0.8);
+    transition:filter 0.5s ease
+}
+.abt__gallery .gallery__image:hover{
+    filter:brightness(1.2)
+}
+.abt__gallery{
+    width:100%;
+    order:2
+}
+.abt__gallery{
+    grid-template-rows:repeat(2, 20rem);
+    grid-auto-rows:20rem;
+    grid-gap:1.5rem
+}
+@media (max-width: 420px){
+    .abt__gallery{
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:repeat(2, 24rem);
+        grid-auto-rows:24rem
+    }
